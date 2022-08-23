@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/spamDetector.css" />
+  </head>
+  <body>
+    <h2>Spam / Hoax Detector</h2>
+    <div class="container">
+      <p style="text-align: center">Select text or entire article</p>
+      <p style="text-align: center">and check for</p>
+
+      <div class="button-container">
+        <button id="checkSpam">Spam</button>
+        <button id="checkHoax">Hoax</button>
+      </div>
+
+      <div class="result closed">
+        <span id="closeIcon">x</span>
+        <p class="first">This <span class="contentType"></span> is</p>
+        <p class="resultType">SPAM</p>
+        <p class="similiarity">with similiarity: <span class="similiarityPercentage"></span>%</p>
+
+        <p class="feedback">this isn't spam? <span class="sendFeedback">send feedback</span></p>
+      </div>
+    </div>
+
+    <script src="scripts/popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+body {
+  width: 300px;
+  height: 190px;
+  padding: 0;
+  margin: 0;
+}
+body h2 {
+  margin-left: 10px;
+}
+body .container {
+  padding: 10px;
+  position: relative;
+}
+body .container p {
+  font-size: 16px;
+  margin: 0;
+}
+body .container p:last-of-type {
+  margin-bottom: 20px;
+}
+body .container .button-container {
+  text-align: center;
+}
+body .container .button-container button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #44f544;
+  cursor: pointer;
+}
+body .container .result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #44f544;
+  width: calc(100% - 10px);
+  padding: 10px;
+  transition: all 0.5s;
+}
+body .container .result.closed {
+  left: 100%;
+}
+body .container .result #closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+body .container .result #closeIcon:hover {
+  text-decoration: underline;
+}
+body .container .result p {
+  font-size: 16px;
+  text-align: center;
+  margin: 5px 0;
+}
+body .container .result p.first {
+  margin-top: 20px;
+}
+body .container .result p.resultType {
+  font-size: 24px;
+}
+body .container .result p.similiarity {
+  font-size: 14px;
+}
+body .container .result p.feedback {
+  font-size: 12px;
+  margin-top: 10px;
+}
+body .container .result p.feedback .sendFeedback {
+  cursor: pointer;
+  text-decoration: underline;
+}

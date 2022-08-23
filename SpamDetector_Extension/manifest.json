@@ -1,0 +1,13 @@
+{
+    "name": "Spam / Hoax Detector",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["storage", "activeTab", "scripting"],
+    "background": {
+        "service_worker": "scripts/background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html"
+}
